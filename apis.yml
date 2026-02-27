@@ -1,0 +1,61 @@
+name: Visioconférence API
+description: API for video conferencing platform with meeting management, participant control, and recording capabilities
+image: https://example.com/visioconference-logo.png
+created: '2024-01-15'
+modified: '2024-01-15'
+specificationVersion: '0.18'
+url: https://api.visioconference.com/apis.yaml
+apis:
+- name: Visioconférence Core API
+  description: Main API for managing video conferences, meetings, and participants
+  image: https://example.com/visioconference-api-icon.png
+  humanURL: https://visioconference.com
+  baseURL: https://api.visioconference.com/v1
+  version: '1.0'
+  tags:
+  - video conferencing
+  - meetings
+  - collaboration
+  - real-time communication
+  properties:
+  - type: Documentation
+    url: https://docs.visioconference.com
+  - type: OpenAPI
+    url: https://api.visioconference.com/openapi.json
+  - type: Authentication
+    url: https://docs.visioconference.com/authentication
+  - type: Pricing
+    url: https://visioconference.com/pricing
+  - type: Terms of Service
+    url: https://visioconference.com/terms
+  - type: Privacy Policy
+    url: https://visioconference.com/privacy
+  - type: Status Page
+    url: https://status.visioconference.com
+  - type: Support
+    url: https://support.visioconference.com
+  - type: SDKs
+    url: https://docs.visioconference.com/sdks
+  - type: Webhooks
+    url: https://docs.visioconference.com/webhooks
+  - type: Rate Limits
+    url: https://docs.visioconference.com/rate-limits
+  contact:
+  - type: Email
+    url: support@visioconference.com
+  - type: Twitter
+    url: https://twitter.com/visioconference
+  - type: Support Portal
+    url: https://support.visioconference.com/contact
+maintainers:
+- name: Visioconférence API Team
+  email: api@visioconference.com
+  url: https://visioconference.com/about
+tags:
+- video conferencing
+- meetings
+- webinars
+- collaboration
+- real-time
+- streaming
+- recording
