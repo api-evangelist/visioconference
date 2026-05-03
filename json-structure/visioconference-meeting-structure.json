@@ -1,0 +1,94 @@
+{
+  "name": "VideoConferenceMeeting",
+  "description": "Common structure for a video conferencing meeting or session across platforms",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "Platform-specific meeting identifier",
+      "required": true
+    },
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "Meeting title or topic",
+      "required": true
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Current meeting status (waiting, started, ended, cancelled)",
+      "required": false
+    },
+    {
+      "name": "hostId",
+      "type": "string",
+      "description": "User ID of the meeting host",
+      "required": false
+    },
+    {
+      "name": "joinUrl",
+      "type": "string",
+      "description": "URL for participants to join",
+      "required": true
+    },
+    {
+      "name": "startTime",
+      "type": "string",
+      "description": "Scheduled or actual start time (ISO 8601 UTC)",
+      "required": false
+    },
+    {
+      "name": "duration",
+      "type": "integer",
+      "description": "Duration in minutes",
+      "required": false
+    },
+    {
+      "name": "timezone",
+      "type": "string",
+      "description": "IANA timezone string",
+      "required": false
+    },
+    {
+      "name": "settings",
+      "type": "object",
+      "description": "Meeting settings (video, audio, recording, waiting room)",
+      "required": false,
+      "fields": [
+        {
+          "name": "video",
+          "type": "object",
+          "description": "Video defaults"
+        },
+        {
+          "name": "audio",
+          "type": "object",
+          "description": "Audio settings including mute on entry"
+        },
+        {
+          "name": "recording",
+          "type": "object",
+          "description": "Recording settings"
+        },
+        {
+          "name": "waitingRoom",
+          "type": "boolean",
+          "description": "Enable participant waiting room"
+        }
+      ]
+    },
+    {
+      "name": "participants",
+      "type": "array",
+      "description": "Meeting participants",
+      "required": false
+    },
+    {
+      "name": "recording",
+      "type": "object",
+      "description": "Recording information and download URL",
+      "required": false
+    }
+  ]
+}

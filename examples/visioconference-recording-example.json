@@ -1,0 +1,18 @@
+{
+  "id": "rec-20260503-001",
+  "meetingId": "82651042387",
+  "topic": "Quarterly Team Review - Q2 2026",
+  "status": "completed",
+  "startTime": "2026-05-03T14:00:10Z",
+  "endTime": "2026-05-03T14:58:45Z",
+  "duration": 58,
+  "recording": {
+    "id": "rec-vid-001",
+    "status": "completed",
+    "downloadUrl": "https://cloud.example.com/recordings/rec-20260503-001.mp4",
+    "duration": 58,
+    "fileSize": 524288000
+  },
+  "hostId": "user-abc123",
+  "hostEmail": "host@example.com"
+}

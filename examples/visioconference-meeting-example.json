@@ -1,0 +1,46 @@
+{
+  "id": "82651042387",
+  "topic": "Quarterly Team Review - Q2 2026",
+  "status": "waiting",
+  "hostId": "user-abc123",
+  "hostEmail": "host@example.com",
+  "joinUrl": "https://meet.example.com/j/82651042387?pwd=abc123",
+  "password": "abc123",
+  "startTime": "2026-05-03T14:00:00Z",
+  "endTime": "2026-05-03T15:00:00Z",
+  "duration": 60,
+  "timezone": "America/New_York",
+  "agenda": "Review Q2 progress, discuss Q3 planning, team updates",
+  "settings": {
+    "video": {
+      "hostVideoOn": true,
+      "participantVideoOn": false
+    },
+    "audio": {
+      "muteOnEntry": true
+    },
+    "recording": {
+      "autoRecord": true,
+      "recordingType": "cloud"
+    },
+    "waitingRoom": true,
+    "maxParticipants": 25
+  },
+  "participants": [
+    {
+      "id": "part-001",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "role": "co-host",
+      "status": "in_meeting",
+      "joinTime": "2026-05-03T14:00:05Z"
+    },
+    {
+      "id": "part-002",
+      "name": "Bob Johnson",
+      "email": "bob.johnson@example.com",
+      "role": "participant",
+      "status": "waiting"
+    }
+  ]
+}

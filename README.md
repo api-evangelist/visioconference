@@ -1,45 +1,54 @@
-# Visioconférence API (visioconference)
-API for video conferencing platform with meeting management, participant control, and recording capabilities
+# Visioconference
 
-**URL:** [Visit APIs.json URL](https://api.visioconference.com/apis.yaml)
+Visioconference (visioconférence in French) is a category of communication technology enabling real-time visual and audio communication between geographically dispersed participants. This repository profiles the video conferencing API ecosystem including leading providers offering REST APIs.
 
-## Tags:
+## Video Conferencing API Providers
 
- - video conferencing, meetings, webinars, collaboration, real-time, streaming, recording
+| Provider | API Documentation |
+|----------|------------------|
+| Zoom | https://developers.zoom.us/docs/api/ |
+| Microsoft Teams (Graph API) | https://learn.microsoft.com/en-us/graph/teams-concept-overview |
+| Google Meet | https://developers.google.com/meet/api |
+| Cisco Webex | https://developer.webex.com/docs/api/getting-started |
+| Daily.co | https://docs.daily.co/reference |
+| Digital Samba (EU) | https://digitalsamba.com/video-api |
 
-## Timestamps
+## JSON Schemas
 
-- **Created:** 2024-01-15 
-- **Modified:** 2024-01-15 
+| File | Description |
+|------|-------------|
+| [json-schema/visioconference-meeting-schema.json](json-schema/visioconference-meeting-schema.json) | Common schema for video conference meetings |
 
-## APIs
+## JSON Structure
 
-### Visioconférence Core API
-Main API for managing video conferences, meetings, and participants
+| File | Description |
+|------|-------------|
+| [json-structure/visioconference-meeting-structure.json](json-structure/visioconference-meeting-structure.json) | Meeting structure documentation |
 
-**Human URL:** [https://visioconference.com](https://visioconference.com)
+## JSON-LD Context
 
+| File | Description |
+|------|-------------|
+| [json-ld/visioconference-context.jsonld](json-ld/visioconference-context.jsonld) | Linked data context mapping video conferencing concepts to schema.org |
 
-#### Tags:
+## Examples
 
- - video conferencing, meetings, collaboration, real-time communication
+| File | Description |
+|------|-------------|
+| [examples/visioconference-meeting-example.json](examples/visioconference-meeting-example.json) | Video conference meeting data example |
+| [examples/visioconference-recording-example.json](examples/visioconference-recording-example.json) | Meeting recording data example |
 
-#### Properties
+## Vocabulary
 
-- [Documentation](https://docs.visioconference.com)
-- [OpenAPI](https://api.visioconference.com/openapi.json)
-- [Authentication](https://docs.visioconference.com/authentication)
-- [Pricing](https://visioconference.com/pricing)
-- [Terms of Service](https://visioconference.com/terms)
-- [Privacy Policy](https://visioconference.com/privacy)
-- [Status Page](https://status.visioconference.com)
-- [Support](https://support.visioconference.com)
-- [SDKs](https://docs.visioconference.com/sdks)
-- [Webhooks](https://docs.visioconference.com/webhooks)
-- [Rate Limits](https://docs.visioconference.com/rate-limits)
+| File | Description |
+|------|-------------|
+| [vocabulary/visioconference-vocabulary.yml](vocabulary/visioconference-vocabulary.yml) | Domain vocabulary for video conferencing concepts |
+
+## Tags
+
+Audio, Chat, Collaboration, Communication, Conferencing, Live Streaming, Real-Time, Remote Work, Screen Sharing, Video, WebRTC
 
 ## Maintainers
 
-**FN:** Visioconférence API Team
-
-**Email:** api@visioconference.com
+**FN:** Kin Lane  
+**Email:** kin@apievangelist.com

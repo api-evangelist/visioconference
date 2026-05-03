@@ -1,0 +1,97 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "vc": "https://api-evangelist.github.io/visioconference/vocab/",
+    "webrtc": "https://www.w3.org/TR/webrtc/",
+
+    "VideoConferenceMeeting": {
+      "@id": "schema:Event",
+      "@type": "@id"
+    },
+    "Participant": {
+      "@id": "schema:Person",
+      "@type": "@id"
+    },
+    "Recording": {
+      "@id": "schema:VideoObject",
+      "@type": "@id"
+    },
+    "Room": {
+      "@id": "https://api-evangelist.github.io/visioconference/vocab/Room",
+      "@type": "@id"
+    },
+
+    "id": {
+      "@id": "schema:identifier"
+    },
+    "topic": {
+      "@id": "schema:name"
+    },
+    "agenda": {
+      "@id": "schema:description"
+    },
+    "status": {
+      "@id": "schema:eventStatus"
+    },
+    "startTime": {
+      "@id": "schema:startDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "endTime": {
+      "@id": "schema:endDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "duration": {
+      "@id": "schema:duration"
+    },
+    "timezone": {
+      "@id": "https://api-evangelist.github.io/visioconference/vocab/timezone"
+    },
+    "joinUrl": {
+      "@id": "schema:url"
+    },
+    "hostId": {
+      "@id": "schema:organizer"
+    },
+    "hostEmail": {
+      "@id": "schema:organizer"
+    },
+    "participants": {
+      "@id": "schema:attendee",
+      "@container": "@list"
+    },
+    "name": {
+      "@id": "schema:name"
+    },
+    "email": {
+      "@id": "schema:email"
+    },
+    "role": {
+      "@id": "schema:roleName"
+    },
+    "joinTime": {
+      "@id": "schema:startDate"
+    },
+    "leaveTime": {
+      "@id": "schema:endDate"
+    },
+    "recording": {
+      "@id": "schema:recordedIn"
+    },
+    "downloadUrl": {
+      "@id": "schema:contentUrl"
+    },
+    "fileSize": {
+      "@id": "schema:fileSize"
+    },
+    "maxParticipants": {
+      "@id": "schema:maximumAttendeeCapacity"
+    },
+    "waitingRoom": {
+      "@id": "https://api-evangelist.github.io/visioconference/vocab/waitingRoom"
+    },
+    "password": {
+      "@id": "https://api-evangelist.github.io/visioconference/vocab/password"
+    }
+  }
+}

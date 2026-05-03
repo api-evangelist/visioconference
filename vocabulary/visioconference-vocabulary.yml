@@ -1,0 +1,160 @@
+name: Visioconference Vocabulary
+description: >-
+  Domain vocabulary for video conferencing (visioconférence) technology and APIs,
+  covering meeting management, real-time communication, recording, participant
+  management, and WebRTC concepts.
+version: '1.0'
+source: https://en.wikipedia.org/wiki/Videotelephony
+terms:
+  - term: Visioconference
+    definition: >-
+      A communication technology enabling real-time visual and audio communication
+      between geographically dispersed participants. Called "visioconférence" in
+      French. Also known as video conference or video call.
+    aliases:
+      - Video Conference
+      - Videoconference
+      - Visioconférence
+    tags:
+      - Core
+
+  - term: Meeting Room
+    definition: >-
+      A virtual or physical space identified by a URL or room ID where video
+      conference participants gather. In API contexts, a room is typically
+      created via API and has a join URL.
+    aliases:
+      - Room
+      - Conference Room
+    tags:
+      - Core
+
+  - term: Host
+    definition: >-
+      The meeting organizer who creates and controls the meeting. The host can
+      admit participants from waiting rooms, mute attendees, record the session,
+      and end the meeting.
+    tags:
+      - Roles
+
+  - term: Participant
+    definition: >-
+      Any person who joins a video conference meeting. Participants may have
+      different roles (host, co-host, attendee) and capabilities depending on
+      the platform and meeting settings.
+    aliases:
+      - Attendee
+      - Member
+    tags:
+      - Roles
+
+  - term: WebRTC
+    definition: >-
+      Web Real-Time Communication — an open standard and browser API enabling
+      peer-to-peer audio, video, and data sharing directly in web browsers
+      without plugins. The foundation for most modern video conferencing APIs.
+    tags:
+      - Technology
+      - Core
+
+  - term: Waiting Room
+    definition: >-
+      A virtual staging area where participants wait before the host admits them
+      to the meeting. Provides the host with control over who enters the session.
+    tags:
+      - Security
+      - Features
+
+  - term: Webinar
+    definition: >-
+      A one-to-many video event where a host or panelists present to a large
+      audience. Attendees typically cannot share video or unmute themselves
+      unless given permission.
+    tags:
+      - Meeting Types
+
+  - term: Recording
+    definition: >-
+      A captured video and/or audio recording of a conference session. Can be
+      stored locally or in cloud storage. Accessible via API for download or
+      sharing.
+    tags:
+      - Features
+
+  - term: Breakout Room
+    definition: >-
+      A sub-room within a meeting where smaller groups of participants can have
+      separate conversations, then rejoin the main meeting.
+    tags:
+      - Features
+
+  - term: Screen Sharing
+    definition: >-
+      The ability for a participant to share their screen, application window,
+      or browser tab with other meeting participants.
+    tags:
+      - Features
+
+  - term: Mute on Entry
+    definition: >-
+      A meeting setting that automatically mutes all participant microphones
+      when they join the meeting, reducing background noise.
+    tags:
+      - Settings
+
+  - term: Join URL
+    definition: >-
+      The unique URL that participants use to enter a video conference session.
+      Usually contains a meeting ID and optionally a password.
+    tags:
+      - Access
+
+  - term: Webhook
+    definition: >-
+      An HTTP callback triggered by video conferencing platform events such as
+      meeting started, participant joined, or recording completed. Used for
+      event-driven integrations.
+    tags:
+      - Integration
+
+  - term: GDPR
+    definition: >-
+      General Data Protection Regulation — EU regulation governing data privacy.
+      Relevant for European video conferencing providers who must ensure participant
+      data is processed and stored within the EU.
+    tags:
+      - Compliance
+      - European
+
+  - term: Virtual Background
+    definition: >-
+      A digital image or video that replaces the participant's real background
+      during a video call, providing privacy and professionalism.
+    tags:
+      - Features
+
+  - term: Co-Host
+    definition: >-
+      A meeting role that grants a participant most host controls, enabling them
+      to manage participants, manage breakout rooms, and share administrative
+      responsibilities.
+    tags:
+      - Roles
+
+  - term: Meeting ID
+    definition: >-
+      A unique numeric or alphanumeric identifier for a meeting session, used
+      to join the meeting via URL or dial-in.
+    tags:
+      - Access
+      - Core
+
+  - term: Passcode
+    definition: >-
+      A numeric or alphanumeric code required to join a secured meeting,
+      providing an additional layer of access control.
+    aliases:
+      - Password
+      - PIN
+    tags:
+      - Security

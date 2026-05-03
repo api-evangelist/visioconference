@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/visioconference/main/json-schema/visioconference-meeting-schema.json",
+  "title": "Video Conference Meeting",
+  "description": "Common schema for a video conference meeting or session across video conferencing platforms",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique meeting identifier on the platform"
+    },
+    "topic": {
+      "type": "string",
+      "description": "Meeting title or topic"
+    },
+    "status": {
+      "type": "string",
+      "description": "Current status of the meeting",
+      "enum": [
+        "waiting",
+        "started",
+        "ended",
+        "cancelled"
+      ]
+    },
+    "hostId": {
+      "type": "string",
+      "description": "User ID of the meeting host"
+    },
+    "hostEmail": {
+      "type": "string",
+      "format": "email",
+      "description": "Email address of the meeting host"
+    },
+    "joinUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL for participants to join the meeting"
+    },
+    "password": {
+      "type": "string",
+      "description": "Meeting password or passcode"
+    },
+    "startTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Scheduled or actual start time in UTC"
+    },
+    "endTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Scheduled or actual end time in UTC"
+    },
+    "duration": {
+      "type": "integer",
+      "description": "Meeting duration in minutes"
+    },
+    "timezone": {
+      "type": "string",
+      "description": "IANA timezone for the meeting (e.g., America/New_York)"
+    },
+    "agenda": {
+      "type": "string",
+      "description": "Meeting agenda or description"
+    },
+    "settings": {
+      "type": "object",
+      "description": "Meeting configuration settings",
+      "properties": {
+        "video": {
+          "type": "object",
+          "properties": {
+            "hostVideoOn": {
+              "type": "boolean",
+              "description": "Whether host video is on by default"
+            },
+            "participantVideoOn": {
+              "type": "boolean",
+              "description": "Whether participant video is on by default"
+            }
+          }
+        },
+        "audio": {
+          "type": "object",
+          "properties": {
+            "muteOnEntry": {
+              "type": "boolean",
+              "description": "Mute participants when they enter"
+            }
+          }
+        },
+        "recording": {
+          "type": "object",
+          "properties": {
+            "autoRecord": {
+              "type": "boolean",
+              "description": "Automatically record the meeting"
+            },
+            "recordingType": {
+              "type": "string",
+              "enum": ["local", "cloud", "none"]
+            }
+          }
+        },
+        "waitingRoom": {
+          "type": "boolean",
+          "description": "Enable waiting room for participants"
+        },
+        "maxParticipants": {
+          "type": "integer",
+          "description": "Maximum number of participants"
+        }
+      }
+    },
+    "participants": {
+      "type": "array",
+      "description": "List of invited or joined participants",
+      "items": {
+        "$ref": "#/$defs/participant"
+      }
+    },
+    "recording": {
+      "$ref": "#/$defs/recording"
+    }
+  },
+  "required": ["id", "topic", "joinUrl"],
+  "$defs": {
+    "participant": {
+      "type": "object",
+      "description": "A participant in a video conference meeting",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Participant identifier"
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["host", "co-host", "participant", "panelist", "attendee"]
+        },
+        "joinTime": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "leaveTime": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["waiting", "in_meeting", "left"]
+        }
+      },
+      "required": ["id", "name"]
+    },
+    "recording": {
+      "type": "object",
+      "description": "Meeting recording information",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["processing", "completed", "failed", "deleted"]
+        },
+        "downloadUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "duration": {
+          "type": "integer",
+          "description": "Recording duration in minutes"
+        },
+        "fileSize": {
+          "type": "integer",
+          "description": "File size in bytes"
+        }
+      }
+    }
+  }
+}
