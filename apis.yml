@@ -114,7 +114,7 @@ common:
     url: https://en.wikipedia.org/wiki/Videotelephony
   - type: JSONSchema
     url: json-schema/visioconference-meeting-schema.json
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/visioconference-context.jsonld
   - type: Vocabulary
     url: vocabulary/visioconference-vocabulary.yml
