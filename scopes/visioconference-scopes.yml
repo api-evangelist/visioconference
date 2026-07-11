@@ -1,0 +1,1907 @@
+generated: '2026-07-11'
+method: searched
+source: openapi/visioconference-openapi.yml
+docs: https://developers.zoom.us/docs/integrations/oauth-scopes/
+schemes:
+- name: oauth2
+  source: openapi/visioconference-openapi.yml
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://zoom.us/oauth/token
+  - flow: authorizationCode
+    authorizationUrl: https://zoom.us/oauth/authorize
+    tokenUrl: https://zoom.us/oauth/token
+  description: OAuth 2.0 (server-to-server or user OAuth); access tokens valid for one hour
+scopes:
+- scope: account:master
+  description: View and manage sub accounts
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: account:read:admin
+  description: View account info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: account:write:admin
+  description: View and manage account info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: billing:master
+  description: View and manage sub account's billing info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: calendar:read
+  description: View calendar
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: calendar:read:admin
+  description: View calendar
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: calendar:write
+  description: Manage calendar
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: calendar:write:admin
+  description: Manage calendar
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat:read
+  description: View Chat Message Info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat:read:admin
+  description: View Chat Message Info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat:write
+  description: Manage Chat Message Info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat:write:admin
+  description: Manage Chat Message Info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_channel:read
+  description: View current user's team chat channels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_channel:read:admin
+  description: View all users' team chat channels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_channel:read:member
+  description: View team chat channels as a member
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_channel:write
+  description: View and manage current user's team chat channels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_channel:write:admin
+  description: View and manage all users' team chat channels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_contact:read
+  description: View current user's team chat contact information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_contact:write
+  description: Send Contact Invitation
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_contact:write:admin
+  description: Send contact invitation
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_event:write
+  description: Manage your chat event info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_event:write:admin
+  description: Manage account's chat event info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_history_legal_hold:read:admin
+  description: View Chat History Legal Hold Info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_history_legal_hold:write:admin
+  description: Manage Chat History Legal Hold Info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_message:read
+  description: View current user's team chat messages
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_message:read:admin
+  description: View all users' team chat messages
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_message:write
+  description: View and manage current user's team chat messages
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_message:write:admin
+  description: View and manage all users' team chat messages
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_migration:read:admin
+  description: View information about a chat history migration
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: chat_migration:write:admin
+  description: Migrate chat history from another vendor
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: imchat:bot
+  description: Enable Chatbot within Zoom Team Chat Client
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: imchat:read:admin
+  description: View all users history and channels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: imchat:write
+  description: Send a team chat message to a Zoom Team Chat user or channel
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: clips:read
+  description: View your clips information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: clips:read:admin
+  description: View your clips information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: clips:write
+  description: Manage your clips information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: clips:write:admin
+  description: Manage your clips information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: apiconnector:master
+  description: This scope allows an app to view and manage sub account’s API Connector information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: apiconnector:read:admin
+  description: This scope allow an app to view all API Connector information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: apiconnector:write:admin
+  description: This scope allow an app to view and manage all API Connector information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: crc:master
+  description: View and manage sub account's CRC configuration
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: crc:read:admin
+  description: View and manage CRC configuration
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: crc_account:master
+  description: View and manage all sub account's Cisco/Polycom room account setting
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: crc_account:read:admin
+  description: View Cisco/Polycom rooms account setting
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: crc_account:write:admin
+  description: View and manage Cisco/Polycom rooms account setting
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: crc_rooms:master
+  description: View and manage sub account’s managed Cisco and Polycom rooms information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: crc_rooms:read:admin
+  description: View all managed Cisco and Polycom rooms information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: crc_rooms:write:admin
+  description: View and manage all managed Cisco and Polycom rooms information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_attachment:read:admin
+  description: View your contact center attachment information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_block_list_rules:write:admin
+  description: Edit Block List Rules
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_flow:write:admin
+  description: flow write
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_follow_up_task:read:admin
+  description: View a follow-up task
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_follow_up_task:write
+  description: Update a follow-up task
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_messaging:read:admin
+  description: Get message
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_messaging:write:admin
+  description: send message
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_outbound_campaign_dnc_list_phones:read:admin
+  description: Get campaign dnc list phone
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_outbound_campaign_dnc_list_phones:write:admin
+  description: Write campaign dnc list phone
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_routing_profile:write:admin
+  description: Edit agent routing profile.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_rtms:write:admin
+  description: Scope to control RTMS
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_team:read:admin
+  description: View your contact center team information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_team:write:admin
+  description: Manage your contact center team information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_user_template:read:admin
+  description: View all contact center user template’s details.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_user_template:write:admin
+  description: View and manage all contact center user template's details.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_asset_library:read:admin
+  description: View your contact center asset library information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_asset_library:write:admin
+  description: Manage your contact center asset library information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_contact:read:admin
+  description: View address book information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_contact:write:admin
+  description: Update address book information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_disposition:read:admin
+  description: View your contact center disposition information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_disposition:write:admin
+  description: Manage your contact center disposition information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_engagement:read:admin
+  description: View all contact center engagement information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_engagement:write:admin
+  description: Manage all contact center engagement information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_flow:read:admin
+  description: View all contact center flow information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_inbox:read:admin
+  description: View all contact center inbox information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_inbox:write:admin
+  description: Manage all contact center inbox information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_note:read:admin
+  description: View all contact center note information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_note:write
+  description: Manage all contact center note information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_operating_hours:read:admin
+  description: View all contact center operating hours information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_operating_hours:write:admin
+  description: Manage all contact center operating hours information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_operation_logs:read:admin
+  description: Read permission for Operation logs
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_outbound_campaign:delete:admin
+  description: Delete an Outbound Campaign.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_outbound_campaign:read:admin
+  description: View an Outbound Campaign.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_outbound_campaign:update:admin
+  description: Update an Outbound Campaign
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_outbound_campaign:write:admin
+  description: Create an Outbound Campaign
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_outbound_campaign_contactlist:read:admin
+  description: Get campaign contact list
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_outbound_campaign_contactlist:write:admin
+  description: Create campaign contact list
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_outbound_campaign_contacts:read:admin
+  description: Get campaign contact list contact
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_outbound_campaign_contacts:write:admin
+  description: Create campaign contact list contact
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_preference:read:admin
+  description: View your contact center preference information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_preference:write:admin
+  description: Manage your contact center preference information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_queue:read:admin
+  description: View your contact center queue information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_queue:write:admin
+  description: Manage your contact center queue information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_recording:read
+  description: View your contact center recording information.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_recording:read:admin
+  description: View all contact center recording information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_recording:write:admin
+  description: Manage all contact center recording information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_region:read:admin
+  description: View all contact center region information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_region:write:admin
+  description: Manage all contact center region information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_report:read:admin
+  description: View all contact center report information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_role:read:admin
+  description: View your contact center role information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_role:write:admin
+  description: Manage your contact center role information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_routing_profile:read:admin
+  description: View routing profile information.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_skill:read:admin
+  description: View all contact center skill information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_skill:write:admin
+  description: Manage all contact center skill information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_sms:master
+  description: View sub account’s SMS log information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_sms:read:admin
+  description: View all contact center SMS log information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_user:read:admin
+  description: View all contact center user’s details
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_user:write:admin
+  description: View and manage all contact center user's details
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_variable:read:admin
+  description: View all contact center variable information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_variable:write:admin
+  description: Manage all contact center variable information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_variable_log:read:admin
+  description: View variable log information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_variable_log:write:admin
+  description: Manage variable log information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_voice_call:master
+  description: View sub account’s voice call information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_voice_call:read:admin
+  description: view voice call information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact:read
+  description: View current user's contacts
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact:read:admin
+  description: View all users' contacts
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: dashboard:master
+  description: View sub account's Dashboard data
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: dashboard:read:admin
+  description: View Dashboard data
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: dashboard_crc:read:admin
+  description: View all users' usage statistics of CRC
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: dashboard_home:read:admin
+  description: View overview of usage statistics for Meetings and Zoom Rooms
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: dashboard_im:read:admin
+  description: View all users' usage statistics of team chat messages and message types
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: dashboard_meetings:read:admin
+  description: View all users' meetings information on Dashboard
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: dashboard_webinars:read:admin
+  description: View all users' webinar information on Dashboard
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: dashboard_zr:read:admin
+  description: View all users' Zoom Room usage statistics and information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: device:read:admin
+  description: Manage device
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: device:write:admin
+  description: View and manage device
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: h323:master
+  description: View and manage sub account's H.323 devices
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: h323:read:admin
+  description: View all users' H.323 devices
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: h323:write:admin
+  description: View and manage all users' H.323 devices
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs:delete
+  description: Delete a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs:delete:admin
+  description: Delete a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs:read:admin
+  description: Get basic info of the file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs:write:admin
+  description: Edit basic info of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_collaborator:delete
+  description: Remove collaborators of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_collaborator:delete:admin
+  description: Remove collaborators of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_collaborator:read
+  description: Get collaborators of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_collaborator:read:admin
+  description: Get collaborator of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_collaborator:write
+  description: scope to manage collaborator in Docs
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_collaborator:write:admin
+  description: scope for admin to manage collaborators
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_export:read
+  description: Get file export status
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_export:read:admin
+  description: Get file export status
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_export:write
+  description: Create a file export
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_export:write:admin
+  description: Create a file export
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_file_owner:write
+  description: Transfer ownership of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_file_owner:write:admin
+  description: Transfer ownership of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_file_uploads:write
+  description: Create a file upload
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_file_uploads:write:admin
+  description: Create a file upload
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_general_access:read
+  description: Get general access of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_general_access:read:admin
+  description: Get general access of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_general_access:write
+  description: Update general access of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_general_access:write:admin
+  description: Update general access of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_import:read
+  description: Get import task status
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_import:read:admin
+  description: Get import task status
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_import:write
+  description: Create new file by import
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs_import:write:admin
+  description: Create new file by import
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: group:master
+  description: View and manage sub account's groups
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: group:read:admin
+  description: View groups
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: group:write:admin
+  description: View and manage groups
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_group:read:admin
+  description: View all contact group information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_group:write:admin
+  description: Manage all contact group information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: imgroup:master
+  description: View and manage sub account's Zoom Team Chat Groups
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: imgroup:read:admin
+  description: View Zoom Team Chat Group information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: imgroup:write:admin
+  description: View and manage Zoom Team Chat Groups
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: clinical_note:read:admin
+  description: Read Clinical Notes
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: clinical_note:update:admin
+  description: Update Clinical Notes
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: mail:read
+  description: Read user’s own mailbox content.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: mail:read:admin
+  description: Read all mailboxes' content under the account, and account level settings.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: mail:write
+  description: Read and write user’s own mailbox content.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: mail:write:admin
+  description: Read and write all mailboxes' content under the account, and account level settings.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: marketplace_app:master
+  description: View and manage sub accounts' marketplace app info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: marketplace_app:read
+  description: View your marketplace app information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: marketplace_app:read:admin
+  description: View marketplace app information for the account
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: marketplace_app:write
+  description: Edit marketplace app
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: marketplace_app:write:admin
+  description: View and Manage marketplace app information for the account
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: marketplace_custom_fields:read
+  description: Read custom field values
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: marketplace_custom_fields:read:admin
+  description: Read custom field values
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: marketplace_entitlement:read
+  description: View entitlements
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: marketplace_entitlement:read:admin
+  description: View entitlements
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: information_barriers:read:admin
+  description: View information barriers
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: information_barriers:read:master
+  description: View information barriers
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: information_barriers:write:admin
+  description: View and manage information barriers
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: information_barriers:write:master
+  description: View and manage information barriers
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting:master
+  description: View and manage sub account's user meetings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting:read
+  description: View your meetings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting:read:admin
+  description: View all user meetings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting:write
+  description: View and manage your meetings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting:write:admin
+  description: View and manage all user meetings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting:write:admin:sip_dialing
+  description: Get CRC dial string with passcode
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting:write:sip_dialing
+  description: Get CRC dial string with passcode
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting_summary:master
+  description: View and manage sub account's user meeting summaries
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting_summary:read
+  description: View your meeting summaries
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting_summary:read:admin
+  description: View all user meeting summaries
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting_token:read:admin:live_streaming
+  description: View live streaming meeting token information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting_token:read:admin:local_archiving
+  description: View local archiving meeting token information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting_token:read:admin:local_recording
+  description: This scope allows an app to view an account's users' local recording meeting token information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting_token:read:live_streaming
+  description: View live streaming meeting token information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting_token:read:local_recording
+  description: This scope allows an app to view a user's local recording meeting token information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: number_management_numbers:read:admin
+  description: View all phone number detail in "Number Management".
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: number_management_numbers:read:master
+  description: View and manage sub account's phone number detail in "Number Management".
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: number_management_numbers:write:admin
+  description: Manage phone number detail in "Number Management".
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: number_management_numbers:write:master
+  description: Manage sub account's phone number detail in "Number Management".
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: pac:read
+  description: View your audio conference info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: pac:read:admin
+  description: View all users' audio conference info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone:master
+  description: View and manage all sub accounts' Zoom Phone information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone:read
+  description: View your phone information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone:read:admin
+  description: View all users' phone information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone:write
+  description: View and manage your phone information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone:write:admin
+  description: View and manage all users' phone information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_call_log:master
+  description: View and manage all subaccounts' call logs
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_call_log:read
+  description: View your call history information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_call_log:read:admin
+  description: View all users' call history information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_call_log:write
+  description: View and manage your call log information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_call_log:write:admin
+  description: View and manage all users' call log information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_peering:master
+  description: View and manage subaccounts' E164 numbers sent via peering API
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_peering:read:admin
+  description: View the E164 numbers sent via peering API
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_peering:write:admin
+  description: View and manage the E164 numbers sent via peering API
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_recording:master
+  description: View and manage subaccounts' call recording information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_recording:read
+  description: View your call recording information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_recording:read:admin
+  description: View all users' recording information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_recording:write
+  description: View and manage your call recording information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_recording:write:admin
+  description: View and manage all users' call recording information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_sms:master
+  description: View and manage all sub accounts' Zoom Phone SMS information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_sms:read
+  description: View your Zoom Phone SMS information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_sms:read:admin
+  description: View all users' Zoom Phone SMS information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_sms:write
+  description: View and manage your Zoom Phone SMS information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_sms:write:admin
+  description: View and manage all users' Zoom Phone SMS information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_voicemail:master
+  description: View and manage subaccounts' call voicemails
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_voicemail:read
+  description: View your call voicemail information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_voicemail:read:admin
+  description: View all users' call voicemail information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_voicemail:write
+  description: View and manage your call voicemail information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: phone_voicemail:write:admin
+  description: View and manage all users' call voicemail information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: qm_evaluations:read
+  description: Read evaluations
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: qm_evaluations:read:admin
+  description: Read evaluations
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: qm_interactions:read
+  description: View interactions
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: qm_interactions:read:admin
+  description: View interactions
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: recording:master
+  description: View and manage sub account's user recordings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: recording:read
+  description: View your recordings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: recording:read:admin
+  description: View all user recordings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: recording:write
+  description: View and manage your recordings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: recording:write:admin
+  description: View and manage all user recordings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: report:master
+  description: View sub account's report data
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: report:read:admin
+  description: View report data
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: report_chat:read:admin
+  description: View your team chat history report
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zva_report:read:admin
+  description: View zva engagements
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: role:master
+  description: View and manage sub account user roles
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: role:read:admin
+  description: View all user roles
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: role:write:admin
+  description: View and manage all user roles
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: room:master
+  description: View and manage sub account's Zoom Rooms information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: room:read:admin
+  description: View all users' Zoom Rooms information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: room:write:admin
+  description: View and manage all users' Zoom Rooms information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: room:read:master
+  description: View sub account's Zoom Rooms information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: room:write:master
+  description: Manage sub account's Zoom Rooms information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: sip_phone:master
+  description: View and manage sub account's SIP phone information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: sip_phone:read:admin
+  description: View all users' SIP phone information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: sip_phone:write:admin
+  description: View and manage all users' SIP phone information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: sip_trunk:master
+  description: View and manage sub account's SIP trunk information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_sms:write:admin
+  description: send sms
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: scheduler:read
+  description: View scheduler
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: scheduler:read:admin
+  description: View scheduler
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: scheduler:write
+  description: Manage scheduler
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: scheduler:write:admin
+  description: Manage scheduler
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: app:deeplink:write
+  description: Generate an app deeplink
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: app:deeplink:write:admin
+  description: Generate an app deeplink
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: app:notification:read
+  description: View chat app notification
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: app:notification:write
+  description: View and Manage chat app notification
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: survey:master
+  description: View survey information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: survey:read:admin
+  description: View survey information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tsp:master
+  description: View and manage sub account's TSP account info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tsp:read
+  description: View your TSP account info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tsp:read:admin
+  description: View TSP info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tsp:write
+  description: View and manage your TSP account info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tsp:write:admin
+  description: View and manage TSP info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks:delete
+  description: Delete user's task(s)
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks:delete:admin
+  description: Delete account's task(s)
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks:read
+  description: Get user’s task(s)
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks:read:admin
+  description: Get account's task(s)
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks:write
+  description: Update or trash tasks
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks:write:admin
+  description: Management the account's task
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_assignee:read
+  description: View task's assignee(s)
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_assignee:read:admin
+  description: View account's task assignees
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_assignee:write
+  description: Add or remove task's assignee
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_assignee:write:admin
+  description: Add or update task's assignees
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_collaborator:read
+  description: View user's task collaborator information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_collaborator:read:admin
+  description: View account's task collaborators
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_collaborator:write
+  description: Add or update task's collaborator
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_collaborator:write:admin
+  description: View and update account's task collaborator information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_comment:read
+  description: Read user's task comment
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_comment:read:admin
+  description: View account's task comment
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_comment:write
+  description: Manage and view the user's task comments
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tasks_comment:write:admin
+  description: View and manage account's task comment.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tracking_fields:master
+  description: View and manage sub account user tracking fields
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tracking_fields:read:admin
+  description: View all users' tracking fields
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: tracking_fields:write:admin
+  description: View and manage all users' tracking fields
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: user:master
+  description: View and manage sub account's user information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: user:read
+  description: View your user information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: user:read:admin
+  description: View all user information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: user:write
+  description: View and manage your user information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: user:write:admin
+  description: View users information and manage users
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: user_info:read
+  description: View user info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: user_zak:read
+  description: View user’s zak token
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: visitor_management:read
+  description: View visitor management information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: visitor_management:write
+  description: Update visitor management information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: visitor_management:write:admin
+  description: Update visitor management information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar:master
+  description: View and manage sub account's user webinars
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar:read
+  description: View your webinars
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar:read:admin
+  description: View all user Webinars
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar:write
+  description: View and manage your webinars
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar:write:admin
+  description: View and manage all user Webinars
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar:write:admin:sip_dialing
+  description: Get CRC dial string with passcode
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar:write:sip_dialing
+  description: Get CRC dial string with passcode
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar_token:read:admin:live_streaming
+  description: View live streaming webinar token information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar_token:read:admin:local_archiving
+  description: View local archiving webinar token information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar_token:read:admin:local_recording
+  description: This scope allows an app to view an account's users' local recording webinar token information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar_token:read:live_streaming
+  description: View live streaming webinar token information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: webinar_token:read:local_recording
+  description: This scope allows an app to view a user's local recording webinar token information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard:read
+  description: Get my whiteboard(s)
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard:read:admin
+  description: Get account’s whiteboard(s)
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard:write
+  description: Update or trash my whiteboard
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard:write:admin
+  description: Update or trash my whiteboard
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_classification_labels:read
+  description: Read whiteboard classification labels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_classification_labels:read:admin
+  description: View account classification labels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_classification_labels:write:admin
+  description: View and manage account classification labels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_collaborator:read
+  description: View user's whiteboard collaborator information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_collaborator:read:admin
+  description: View account's whiteboard collaborator information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_collaborator:write
+  description: View and add collaborator information to the whiteboard
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_collaborator:write:admin
+  description: View and manage account's whiteboard collaborator information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_content:read
+  description: View and export whiteboard content
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_content:read:admin
+  description: View and export account’s whiteboard(s) content
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_export:write
+  description: Create my whiteboard export data
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_export:write:admin
+  description: Create account's whiteboard export data
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_file:read
+  description: View whiteboard file information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_file:read:admin
+  description: View whiteboard file information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_file:write
+  description: View and manage whiteboard file informanation
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_file:write:admin
+  description: View and manage account's whiteboard file information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_import:read
+  description: View user's whiteboard import information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_import:read:admin
+  description: View account's whiteboard import information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_import:write
+  description: View and manage user's whiteboard import information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_import:write:admin
+  description: view and manage account's whiteboard import information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_project:read
+  description: View user's project information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_project:read:admin
+  description: View account's project information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_project:write
+  description: View and manage user's project information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_project:write:admin
+  description: View and manage account's project information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_project_collaborator:read
+  description: View user's project collaborator information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_project_collaborator:read:admin
+  description: View account's project collaborator information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_project_collaborator:write
+  description: View and update user's project collaborator information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_project_collaborator:write:admin
+  description: View and update account's project collaborator information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_share_setting:write
+  description: View and manage your whiteboard sharing settings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: whiteboard_share_setting:write:admin
+  description: View and manage account's whiteboard sharing settings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: workspace:read
+  description: View workspace reservation information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: workspace:read:admin
+  description: View workspace reservation information for the account
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: workspace:write
+  description: Edit workspace reservation information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: workspace:write:admin
+  description: Edit workspace reservation information for the account
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: aic_archive:read:admin
+  description: View all user's AIC archive files
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: dashboard_aic:read:admin
+  description: View users' AIC information on Dashboard
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: data_request:read:admin
+  description: Allows viewing and downloading data request information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: data_request:write:admin
+  description: Allows creation and modification of data requests
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: dialer:read:admin
+  description: View Dialer
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: dialer:write:admin
+  description: Manage Dialer
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: clips:read:master
+  description: view your subAccount clips info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs:read
+  description: Get basic info of the file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: docs:write
+  description: Edit basic info of a file
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_access_links:read
+  description: View event's Access Link
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_access_links:read:admin
+  description: View event's Access Link
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_access_links:write
+  description: View and Manage Zoom Event's access links
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_access_links:write:admin
+  description: View and Manage Zoom Event's access links
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_attendee_actions:read
+  description: View attendee actions performed by host for an event/session
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_attendee_actions:read:admin
+  description: View attendee actions performed by host for an event/session
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_attendee_actions:write
+  description: View and manage attendee actions performed by host for an event/session
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_attendee_actions:write:admin
+  description: View and manage attendee actions performed by host for an event/session
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_basic:read
+  description: View your Zoom events
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_basic:read:admin
+  description: View all events information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_basic:write
+  description: Manage your Zoom events
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_basic:write:admin
+  description: View and manage events information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_coeditor:write
+  description: View and manage coeditor information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_coeditor:write:admin
+  description: View and manage coeditor information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_coeditors:read
+  description: View Zoom event coeditors information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_coeditors:read:admin
+  description: View Zoom events coeditor information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_email:read
+  description: View emails for an event
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_email:read:admin
+  description: View emails for an event
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_exhibitors:read
+  description: View exhibitor information for an event
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_exhibitors:read:admin
+  description: View exhibitor information for an event
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_exhibitors:write
+  description: View and manage exhibitor information for an event
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_exhibitors:write:admin
+  description: View and manage exhibitor information for an event
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_file:write
+  description: zoom events file upload
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_file:write:admin
+  description: zoom events file upload account level
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_hub:write
+  description: Update Zoom Events hub configuration
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_hub:write:admin
+  description: Update Zoom Events hub information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_hubs:read
+  description: View all hubs information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_hubs:read:admin
+  description: View all hubs information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_insights:read
+  description: View Insights data
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_insights:read:admin
+  description: View Insights data
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_registrants:read
+  description: View event registrants information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_registrants:read:admin
+  description: View event registrants information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_reports:read
+  description: View Zoom events report
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_reports:read:admin
+  description: View Zoom events reports
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_sessions:read
+  description: View event session information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_sessions:read:admin
+  description: View event session information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_sessions:write
+  description: View and manage event session information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_sessions:write:admin
+  description: View and manage event session information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_speakers:read
+  description: View event speaker information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_speakers:read:admin
+  description: View event speaker information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_speakers:write
+  description: Manage event speaker information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_speakers:write:admin
+  description: Manage event speaker information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_ticket_types:read
+  description: View all event ticket types
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_ticket_types:read:admin
+  description: View all event ticket types
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_ticket_types:write
+  description: View and manage event ticket types
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_ticket_types:write:admin
+  description: View and manage event ticket types
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_tickets:read
+  description: View event tickets and event ticket details
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_tickets:read:admin
+  description: View event tickets information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_tickets:write
+  description: Create event tickets
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_tickets:write:admin
+  description: View and manage event tickets information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_videos:read
+  description: View video details
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_videos:read:admin
+  description: View video information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_videos:write
+  description: Manage video information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_videos:write:admin
+  description: Manage video information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_vod_channels:read
+  description: View on-demand video channels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_vod_channels:read:admin
+  description: View on-demand video channels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_vod_channels:write
+  description: View and manage on-demand video channels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_vod_channels:write:admin
+  description: View and manage on-demand video channels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_vod_registration:read
+  description: Read VOD channel registrations
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_vod_registration:read:admin
+  description: Read VOD channel registration settings
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_vod_registration:write
+  description: Update VOD channel registrations
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_vod_registration:write:admin
+  description: Update VOD channel registrations
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_vod_reports:read
+  description: Zoom Events VOD reports
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_events_vod_reports:read:admin
+  description: Zoom events VOD reports
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_account:read:admin
+  description: View all account settings information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_coaching:read
+  description: View your coaching information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_coaching:read:admin
+  description: View all coaching information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_comment:read
+  description: View your comments information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_comment:read:admin
+  description: Manage all comments information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_comment:write
+  description: Mangage your comments information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_comment:write:admin
+  description: Manage all comments information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_conversation:read
+  description: View your conversations information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_conversation:read:admin
+  description: View all conversations information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_conversation:write
+  description: Manage your conversations information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_conversation:write:admin
+  description: Manage all conversations information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_deal:read
+  description: Retrieve ZoomIQ Deal information with activity
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_deal:read:admin
+  description: Retrieve ZoomIQ Deal information with activity
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_deal:write
+  description: View and manage deal activities
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_deal:write:admin
+  description: View and manage deal activities
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_playlist:read
+  description: View all playlists information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_playlist:read:admin
+  description: View all playlists information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_team:read
+  description: Get team info in User level
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_team:read:admin
+  description: Get team info
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_team:write:admin
+  description: team resource read&edit
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting_summary:write
+  description: View and manage your meeting summaries
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: meeting_summary:write:admin
+  description: View and manage all user meeting summaries
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: qm_interactions:write
+  description: Manage the interactions.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: qm_interactions:write:admin
+  description: Manage the interactions.
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_crm:read:admin
+  description: View CRM objects and metadata
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: iq_crm:write:admin
+  description: Edit CRM objects and metadata
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: division:read:admin
+  description: View divisions
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: division:wirte:admin
+  description: View and manage divisions
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_channels:read
+  description: View video channels information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_channels:read:admin
+  description: View video channels information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_channels:write
+  description: Manage video channels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_channels:write:admin
+  description: Manage video channels
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_file:write
+  description: Upload file to video management
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_file:write:admin
+  description: upload a file to video management
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_playlists:read
+  description: View playlists
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_playlists:read:admin
+  description: View playlists
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_playlists:write
+  description: Manage playlists
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_playlists:write:admin
+  description: Manage playlists
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_videos:read
+  description: View videos information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_videos:read:admin
+  description: View videos information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_videos:write
+  description: Manage video content and metadata
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: video_mgmt_videos:write:admin
+  description: Manage video content and metadata
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_commerce:read:admin
+  description: Zoom commerce API read access for account admin
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zoom_commerce:write:admin
+  description: Zoom Commerce API write access for account admin
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zva:read:km_kbs
+  description: View your knowledge bases and articles
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zva:write:km_kbs
+  description: View and manage your knowledge bases and articles
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: zva_report:read
+  description: View zva engagements
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: contact_center_block_list_rules:read:admin
+  description: Read Block List Rules
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: workforce_management:write:admin
+  description: Create workforce management information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/
+- scope: workforce_management:read:admin
+  description: View workforce management information
+  sources:
+  - https://developers.zoom.us/docs/integrations/oauth-scopes/

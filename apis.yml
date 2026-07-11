@@ -110,6 +110,10 @@ apis:
       - type: Documentation
         url: https://digitalsamba.com/video-api
 common:
+  - type: Authentication
+    url: authentication/visioconference-authentication.yml
+  - type: OAuthScopes
+    url: scopes/visioconference-scopes.yml
   - type: Website
     url: https://en.wikipedia.org/wiki/Videotelephony
   - type: JSONSchema
