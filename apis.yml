@@ -110,6 +110,10 @@ apis:
       - type: Documentation
         url: https://digitalsamba.com/video-api
 common:
+  - type: VulnerabilityDisclosure
+    url: security/visioconference-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/visioconference-domain-security.yml
   - type: Authentication
     url: authentication/visioconference-authentication.yml
   - type: OAuthScopes
