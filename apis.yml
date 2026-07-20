@@ -1,5 +1,6 @@
 aid: visioconference
 name: Visioconference
+kind: topic
 description: >-
   Visioconference (video conferencing) is a category of communication technology
   enabling real-time visual and audio communication between remote participants.
