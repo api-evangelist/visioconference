@@ -1,0 +1,80 @@
+openapi: 3.1.0
+info:
+  title: Zoom Meeting API (Visioconference) Archiving API
+  version: '2'
+  description: 'The visioconference (video conferencing) ecosystem profiled in this index
+
+    is anchored by the Zoom REST API. The Zoom API exposes endpoints for
+
+    managing meetings, users, recordings, and archived files. All requests
+
+    require an OAuth 2.0 access token (server-to-server OAuth or OAuth user
+
+    flow) and are made against https://api.zoom.us/v2.
+
+    '
+  contact:
+    name: Zoom Developer Docs
+    url: https://developers.zoom.us/docs/api/
+servers:
+- url: https://api.zoom.us/v2
+  description: Zoom API base URL
+security:
+- oauth2: []
+tags:
+- name: Archiving
+paths:
+  /archive_files:
+    get:
+      tags:
+      - Archiving
+      summary: List archived files
+      operationId: listArchiveFiles
+      responses:
+        '200':
+          description: Archive files
+  /archive_files/statistics:
+    get:
+      tags:
+      - Archiving
+      summary: Archived file statistics
+      operationId: archiveFileStats
+      responses:
+        '200':
+          description: Statistics
+  /past_meetings/{meetingUUID}/archive_files:
+    parameters:
+    - name: meetingUUID
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Archiving
+      summary: Get past meeting's archived files
+      operationId: getPastArchiveFiles
+      responses:
+        '200':
+          description: Files
+    delete:
+      tags:
+      - Archiving
+      summary: Delete past meeting's archived files
+      operationId: deletePastArchiveFiles
+      responses:
+        '204':
+          description: Deleted
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 (server-to-server or user OAuth); access tokens valid for one hour
+      flows:
+        clientCredentials:
+          tokenUrl: https://zoom.us/oauth/token
+          scopes: {}
+        authorizationCode:
+          authorizationUrl: https://zoom.us/oauth/authorize
+          tokenUrl: https://zoom.us/oauth/token
+          scopes: {}

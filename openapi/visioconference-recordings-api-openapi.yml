@@ -1,0 +1,120 @@
+openapi: 3.1.0
+info:
+  title: Zoom Meeting API (Visioconference) Archiving Recordings API
+  version: '2'
+  description: 'The visioconference (video conferencing) ecosystem profiled in this index
+
+    is anchored by the Zoom REST API. The Zoom API exposes endpoints for
+
+    managing meetings, users, recordings, and archived files. All requests
+
+    require an OAuth 2.0 access token (server-to-server OAuth or OAuth user
+
+    flow) and are made against https://api.zoom.us/v2.
+
+    '
+  contact:
+    name: Zoom Developer Docs
+    url: https://developers.zoom.us/docs/api/
+servers:
+- url: https://api.zoom.us/v2
+  description: Zoom API base URL
+security:
+- oauth2: []
+tags:
+- name: Recordings
+paths:
+  /meetings/{meetingId}/recordings:
+    parameters:
+    - name: meetingId
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Recordings
+      summary: Get meeting recordings
+      operationId: getRecordings
+      responses:
+        '200':
+          description: Recordings
+    delete:
+      tags:
+      - Recordings
+      summary: Delete all meeting recordings
+      operationId: deleteRecordings
+      responses:
+        '204':
+          description: Deleted
+  /meetings/{meetingId}/recordings/{recordingId}:
+    parameters:
+    - name: meetingId
+      in: path
+      required: true
+      schema:
+        type: string
+    - name: recordingId
+      in: path
+      required: true
+      schema:
+        type: string
+    delete:
+      tags:
+      - Recordings
+      summary: Delete specific recording file
+      operationId: deleteRecordingFile
+      responses:
+        '204':
+          description: Deleted
+  /meetings/{meetingId}/recordings/settings:
+    parameters:
+    - name: meetingId
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Recordings
+      summary: Get meeting recording settings
+      operationId: getRecordingSettings
+      responses:
+        '200':
+          description: Settings
+    patch:
+      tags:
+      - Recordings
+      summary: Update recording settings
+      operationId: updateRecordingSettings
+      responses:
+        '204':
+          description: Updated
+  /meetings/{meetingId}/transcript:
+    parameters:
+    - name: meetingId
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Recordings
+      summary: Get meeting transcript
+      operationId: getTranscript
+      responses:
+        '200':
+          description: Transcript
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 (server-to-server or user OAuth); access tokens valid for one hour
+      flows:
+        clientCredentials:
+          tokenUrl: https://zoom.us/oauth/token
+          scopes: {}
+        authorizationCode:
+          authorizationUrl: https://zoom.us/oauth/authorize
+          tokenUrl: https://zoom.us/oauth/token
+          scopes: {}
