@@ -10,7 +10,20 @@ description: >-
   video conferencing functionality. The term "visioconference" is commonly used
   in French-speaking contexts.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/visioconference.png
 tags:
   - Audio
   - Chat
@@ -28,88 +41,116 @@ modified: '2026-05-03'
 url: https://raw.githubusercontent.com/api-evangelist/visioconference/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 apis:
-  - aid: visioconference:zoom-api
-    name: Zoom API
-    description: >-
-      The Zoom REST API provides access to Zoom meetings, webinars, users,
-      cloud recordings, and phone services for building Zoom integrations.
-    humanURL: https://developers.zoom.us/
-    tags:
-      - Video Conferencing
-      - Meetings
-      - Webinars
-    properties:
-      - type: Documentation
-        url: https://developers.zoom.us/docs/api/
-      - type: OpenAPI
-        url: https://raw.githubusercontent.com/zoom/api/master/openapi/zoom-api.yaml
-  - aid: visioconference:microsoft-teams-api
-    name: Microsoft Teams API
-    description: >-
-      Microsoft Graph API for Teams provides access to teams, channels, meetings,
-      calls, and messaging in Microsoft Teams.
-    humanURL: https://learn.microsoft.com/en-us/graph/teams-concept-overview
-    tags:
-      - Video Conferencing
-      - Meetings
-      - Collaboration
-      - Microsoft
-    properties:
-      - type: Documentation
-        url: https://learn.microsoft.com/en-us/graph/teams-concept-overview
-  - aid: visioconference:google-meet-api
-    name: Google Meet REST API
-    description: >-
-      Google Meet REST API allows developers to create and manage Meet spaces
-      and retrieve recording artifacts.
-    humanURL: https://developers.google.com/meet/api
-    tags:
-      - Video Conferencing
-      - Meetings
-      - Google
-    properties:
-      - type: Documentation
-        url: https://developers.google.com/meet/api
-  - aid: visioconference:cisco-webex-api
-    name: Cisco Webex API
-    description: >-
-      Cisco Webex REST API for meetings, messaging, calling, and device management.
-      Supports webhooks for event-driven integrations.
-    humanURL: https://developer.webex.com/
-    tags:
-      - Video Conferencing
-      - Meetings
-      - Cisco
-    properties:
-      - type: Documentation
-        url: https://developer.webex.com/docs/api/getting-started
-  - aid: visioconference:daily-co-api
-    name: Daily.co API
-    description: >-
-      Daily.co REST API for creating and managing video call rooms, recording,
-      and participant management using WebRTC.
-    humanURL: https://docs.daily.co/reference
-    tags:
-      - Video Conferencing
-      - WebRTC
-      - Rooms
-    properties:
-      - type: Documentation
-        url: https://docs.daily.co/reference
-  - aid: visioconference:digital-samba-api
-    name: Digital Samba Embedded API
-    description: >-
-      European-hosted video conferencing REST API for creating rooms, managing
-      access, and embedding video calls. GDPR-compliant with data stored in Europe.
-    humanURL: https://digitalsamba.com/
-    tags:
-      - Video Conferencing
-      - WebRTC
-      - GDPR
-      - European
-    properties:
-      - type: Documentation
-        url: https://digitalsamba.com/video-api
+- aid: visioconference:microsoft-teams-api
+  name: Microsoft Teams API
+  description: >-
+    Microsoft Graph API for Teams provides access to teams, channels, meetings, calls, and messaging in
+    Microsoft Teams.
+  humanURL: https://learn.microsoft.com/en-us/graph/teams-concept-overview
+  tags:
+  - Video Conferencing
+  - Meetings
+  - Collaboration
+  - Microsoft
+  properties:
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/graph/teams-concept-overview
+- aid: visioconference:google-meet-api
+  name: Google Meet REST API
+  description: >-
+    Google Meet REST API allows developers to create and manage Meet spaces and retrieve recording artifacts.
+  humanURL: https://developers.google.com/meet/api
+  tags:
+  - Video Conferencing
+  - Meetings
+  - Google
+  properties:
+  - type: Documentation
+    url: https://developers.google.com/meet/api
+- aid: visioconference:cisco-webex-api
+  name: Cisco Webex API
+  description: >-
+    Cisco Webex REST API for meetings, messaging, calling, and device management. Supports webhooks for
+    event-driven integrations.
+  humanURL: https://developer.webex.com/
+  tags:
+  - Video Conferencing
+  - Meetings
+  - Cisco
+  properties:
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/getting-started
+- aid: visioconference:daily-co-api
+  name: Daily.co API
+  description: >-
+    Daily.co REST API for creating and managing video call rooms, recording, and participant management
+    using WebRTC.
+  humanURL: https://docs.daily.co/reference
+  tags:
+  - Video Conferencing
+  - WebRTC
+  - Rooms
+  properties:
+  - type: Documentation
+    url: https://docs.daily.co/reference
+- aid: visioconference:digital-samba-api
+  name: Digital Samba Embedded API
+  description: >-
+    European-hosted video conferencing REST API for creating rooms, managing access, and embedding video
+    calls. GDPR-compliant with data stored in Europe.
+  humanURL: https://digitalsamba.com/
+  tags:
+  - Video Conferencing
+  - WebRTC
+  - GDPR
+  - European
+  properties:
+  - type: Documentation
+    url: https://digitalsamba.com/video-api
+- aid: visioconference:visioconference-archiving-api
+  name: Visioconference Archiving API
+  description: The Archiving API from Visioconference — 3 operation(s) for archiving.
+  humanURL: https://developers.zoom.us/
+  tags:
+  - Archiving
+  properties:
+  - type: OpenAPI
+    url: openapi/visioconference-archiving-api-openapi.yml
+  - type: Documentation
+    url: https://developers.zoom.us/docs/api/
+- aid: visioconference:visioconference-meetings-api
+  name: Visioconference Meetings API
+  description: The Meetings API from Visioconference — 2 operation(s) for meetings.
+  humanURL: https://developers.zoom.us/
+  tags:
+  - Meetings
+  properties:
+  - type: OpenAPI
+    url: openapi/visioconference-meetings-api-openapi.yml
+  - type: Documentation
+    url: https://developers.zoom.us/docs/api/
+- aid: visioconference:visioconference-recordings-api
+  name: Visioconference Recordings API
+  description: The Recordings API from Visioconference — 4 operation(s) for recordings.
+  humanURL: https://developers.zoom.us/
+  tags:
+  - Recordings
+  properties:
+  - type: OpenAPI
+    url: openapi/visioconference-recordings-api-openapi.yml
+  - type: Documentation
+    url: https://developers.zoom.us/docs/api/
+- aid: visioconference:visioconference-users-api
+  name: Visioconference Users API
+  description: The Users API from Visioconference — 2 operation(s) for users.
+  humanURL: https://developers.zoom.us/
+  tags:
+  - Users
+  properties:
+  - type: OpenAPI
+    url: openapi/visioconference-users-api-openapi.yml
+  - type: Documentation
+    url: https://developers.zoom.us/docs/api/
 common:
   - type: AgenticAccess
     url: agentic-access/visioconference-agentic-access.yml
