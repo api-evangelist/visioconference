@@ -1,0 +1,20 @@
+{
+  "provider": "visioconference",
+  "sources": [
+    "visioconference-archiving-api-openapi.yml",
+    "visioconference-meetings-api-openapi.yml",
+    "visioconference-recordings-api-openapi.yml",
+    "visioconference-users-api-openapi.yml"
+  ],
+  "outputs": [
+    "visioconference-archiving-api-openapi.yml",
+    "visioconference-meetings-api-openapi.yml",
+    "visioconference-recordings-api-openapi.yml",
+    "visioconference-users-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

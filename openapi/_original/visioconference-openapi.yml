@@ -1,0 +1,241 @@
+openapi: 3.1.0
+info:
+  title: Zoom Meeting API (Visioconference)
+  version: '2'
+  description: |
+    The visioconference (video conferencing) ecosystem profiled in this index
+    is anchored by the Zoom REST API. The Zoom API exposes endpoints for
+    managing meetings, users, recordings, and archived files. All requests
+    require an OAuth 2.0 access token (server-to-server OAuth or OAuth user
+    flow) and are made against https://api.zoom.us/v2.
+  contact:
+    name: Zoom Developer Docs
+    url: https://developers.zoom.us/docs/api/
+servers:
+  - url: https://api.zoom.us/v2
+    description: Zoom API base URL
+tags:
+  - name: Meetings
+  - name: Users
+  - name: Recordings
+  - name: Archiving
+paths:
+  /users:
+    get:
+      tags: [Users]
+      summary: List users in an account
+      operationId: listUsers
+      responses:
+        '200':
+          description: List of users
+    post:
+      tags: [Users]
+      summary: Create a user
+      operationId: createUser
+      responses:
+        '201':
+          description: User created
+  /users/{userId}:
+    parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Users]
+      summary: Get a user
+      operationId: getUser
+      responses:
+        '200':
+          description: User
+    patch:
+      tags: [Users]
+      summary: Update a user
+      operationId: updateUser
+      responses:
+        '204':
+          description: Updated
+    delete:
+      tags: [Users]
+      summary: Delete a user
+      operationId: deleteUser
+      responses:
+        '204':
+          description: Deleted
+  /users/{userId}/meetings:
+    parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Meetings]
+      summary: List a user's meetings
+      operationId: listUserMeetings
+      responses:
+        '200':
+          description: Meetings list
+    post:
+      tags: [Meetings]
+      summary: Create a meeting
+      operationId: createMeeting
+      responses:
+        '201':
+          description: Created
+  /meetings/{meetingId}:
+    parameters:
+      - name: meetingId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Meetings]
+      summary: Get a meeting
+      operationId: getMeeting
+      responses:
+        '200':
+          description: Meeting
+    patch:
+      tags: [Meetings]
+      summary: Update a meeting
+      operationId: updateMeeting
+      responses:
+        '204':
+          description: Updated
+    delete:
+      tags: [Meetings]
+      summary: Delete a meeting
+      operationId: deleteMeeting
+      responses:
+        '204':
+          description: Deleted
+  /meetings/{meetingId}/recordings:
+    parameters:
+      - name: meetingId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Recordings]
+      summary: Get meeting recordings
+      operationId: getRecordings
+      responses:
+        '200':
+          description: Recordings
+    delete:
+      tags: [Recordings]
+      summary: Delete all meeting recordings
+      operationId: deleteRecordings
+      responses:
+        '204':
+          description: Deleted
+  /meetings/{meetingId}/recordings/{recordingId}:
+    parameters:
+      - name: meetingId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: recordingId
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      tags: [Recordings]
+      summary: Delete specific recording file
+      operationId: deleteRecordingFile
+      responses:
+        '204':
+          description: Deleted
+  /meetings/{meetingId}/recordings/settings:
+    parameters:
+      - name: meetingId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Recordings]
+      summary: Get meeting recording settings
+      operationId: getRecordingSettings
+      responses:
+        '200':
+          description: Settings
+    patch:
+      tags: [Recordings]
+      summary: Update recording settings
+      operationId: updateRecordingSettings
+      responses:
+        '204':
+          description: Updated
+  /meetings/{meetingId}/transcript:
+    parameters:
+      - name: meetingId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Recordings]
+      summary: Get meeting transcript
+      operationId: getTranscript
+      responses:
+        '200':
+          description: Transcript
+  /archive_files:
+    get:
+      tags: [Archiving]
+      summary: List archived files
+      operationId: listArchiveFiles
+      responses:
+        '200':
+          description: Archive files
+  /archive_files/statistics:
+    get:
+      tags: [Archiving]
+      summary: Archived file statistics
+      operationId: archiveFileStats
+      responses:
+        '200':
+          description: Statistics
+  /past_meetings/{meetingUUID}/archive_files:
+    parameters:
+      - name: meetingUUID
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Archiving]
+      summary: Get past meeting's archived files
+      operationId: getPastArchiveFiles
+      responses:
+        '200':
+          description: Files
+    delete:
+      tags: [Archiving]
+      summary: Delete past meeting's archived files
+      operationId: deletePastArchiveFiles
+      responses:
+        '204':
+          description: Deleted
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: OAuth 2.0 (server-to-server or user OAuth); access tokens valid for one hour
+      flows:
+        clientCredentials:
+          tokenUrl: https://zoom.us/oauth/token
+          scopes: {}
+        authorizationCode:
+          authorizationUrl: https://zoom.us/oauth/authorize
+          tokenUrl: https://zoom.us/oauth/token
+          scopes: {}
+security:
+  - oauth2: []
