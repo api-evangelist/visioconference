@@ -1,0 +1,142 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Zoom Meeting API (Visioconference) Archiving Recordings API",
+    "version": "2"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "client_credentials",
+      "accessTokenUrl": "https://zoom.us/oauth/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Recordings",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get meeting recordings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.zoom.us/v2/meetings/:meetingId/recordings",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get meeting recordings"
+        },
+        {
+          "info": {
+            "name": "Delete all meeting recordings",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.zoom.us/v2/meetings/:meetingId/recordings",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete all meeting recordings"
+        },
+        {
+          "info": {
+            "name": "Delete specific recording file",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.zoom.us/v2/meetings/:meetingId/recordings/:recordingId",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "recordingId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete specific recording file"
+        },
+        {
+          "info": {
+            "name": "Get meeting recording settings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.zoom.us/v2/meetings/:meetingId/recordings/settings",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get meeting recording settings"
+        },
+        {
+          "info": {
+            "name": "Update recording settings",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.zoom.us/v2/meetings/:meetingId/recordings/settings",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update recording settings"
+        },
+        {
+          "info": {
+            "name": "Get meeting transcript",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.zoom.us/v2/meetings/:meetingId/transcript",
+            "params": [
+              {
+                "name": "meetingId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get meeting transcript"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
