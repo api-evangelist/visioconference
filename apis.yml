@@ -39,7 +39,7 @@ tags:
 created: '2024-01-15'
 modified: '2026-05-03'
 url: https://raw.githubusercontent.com/api-evangelist/visioconference/refs/heads/main/apis.yml
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: visioconference:microsoft-teams-api
   name: Microsoft Teams API
