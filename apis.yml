@@ -28,6 +28,18 @@ tags:
   - Audio
   - Chat
   - Collaboration
+  - Communications
+  - Conferencing
+  - Live Streaming
+  - Real-Time
+  - Remote Work
+  - Screen Sharing
+  - Video
+  - WebRTC
+tags_raw:
+  - Audio
+  - Chat
+  - Collaboration
   - Communication
   - Conferencing
   - Live Streaming
@@ -145,6 +157,8 @@ apis:
   description: The Users API from Visioconference — 2 operation(s) for users.
   humanURL: https://developers.zoom.us/
   tags:
+  - User
+  tags_raw:
   - Users
   properties:
   - type: OpenAPI
