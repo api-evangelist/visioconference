@@ -157,6 +157,8 @@ apis:
   description: The Recordings API from Visioconference — 4 operation(s) for recordings.
   humanURL: https://developers.zoom.us/
   tags:
+  - Recording
+  tags_raw:
   - Recordings
   properties:
   - type: OpenAPI
